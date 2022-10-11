@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*INDEX START*/
+
+.mainBody{ 
+    background-image: url("../img/test1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 145px auto 145px;
+}
+
+.headerHome{
+    display: grid;
+    grid-template-columns: 25% 40% 35% ;
+    grid-template-areas: 'logo . navBar';
+
+}
+
+.navBar1{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: white;
+    grid-area: navBar;
+    justify-content: end;
+   
+
+}
+
+.name-home{
+    padding: 50px;
+    grid-area: logo;
+}
+
+.navBar1 ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    font-size: 120%;
+
+}
+
+
+.navBar1 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-home{
+    background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.container-iconos-foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-iconos{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.container-terms ul{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.container-terms ul li{
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 120%;
+
+}
+
+.container-terms ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+h4{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 300; 
+
+}
+
+
+
+/*INDEX END*/
+
+/*TICKETS START*/
+
+.ticketsBody{
+    background-image: url("../img/tickets.1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: 145px auto 145px;
+}
+
+.containerMainTickets{
+    background: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50));
+    height: 920px;
+    margin: 0px 100px 100px 100px;
+
+}
+
+table{
+    color: white;
+    width: 100%;
+
+}
+
+td{
+    padding: 30px;
+    text-align: center;  
+}
+
+.td-date{                  
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+
+}
+
+.td-info{                
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    
+}
+
+.td-button{              
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: blue;
+    background-color: white;
+    padding: 6px 16px;
+    border: 0;
+    animation: text-pop-up-top 0.5s ease-in-out both;
+}
+
+.td-button-soldout{       
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(160, 4, 4);
+    padding: 6px 10px;
+    border: 0;
+
+}
+
+.footer-tickets{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+/*TICKETS END*/
+
+/*STORE START*/
+
+.bodyStore{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 145px auto 145px;
+}
+
+.headerStore{
+
+    background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
+    display: grid;
+    grid-template-columns: 25% 40% 35% ;
+    grid-template-areas: 'logo . navBar'; 
+}
+
+.containerStore{
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 50px;
+
+}
+
+.containerMerch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    gap: 20px;
+
+}
+
+.pMerch{
+    font-weight: bold;
+}
+
+.footer-music{
+    background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+/*STORE END*/
+
+/*MUSIC START*/
+
+.containerMusic{
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 25px;
+
+}
+
+.containerMusic a img:hover{
+    transform: scale(1.15);
+    transition: transform 1000ms;
+}
+
+.containerMusic img{
+
+    width: 250px;
+    width: 250px;
+}
+
+/*MUSIC END*/
+
+/*LOGIN START*/
+
+
+.loginBody{
+    background-image: url("../img/login.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 145px auto 145px;
+}
+
+.mainLogin{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imputForm{
+    margin: 5px 40px 20px 40px;
+}
+
+input{
+
+width: 300px;
+height: 45px;
+font-family: 'Inter', sans-serif;
+font-size: 15px;
+
+}
+
+.forgotpass{ 
+
+    font-size: 13px;
+    margin-left: 200px;
+    margin-top: -15px;
+}
+
+.forgotpass a{ 
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Bayon', sans-serif;
+    font-size: 13px;
+
+}
+
+h2{
+    color: white;
+    font-family: 'Bayon', sans-serif;
+    font-size: 45px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+
+
+.formEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonSign{
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Bayon', sans-serif;
+    width: 140px;
+    height: 45px;
+    border-radius: 200px 200px 200px 200px / 150px 150px 150px 150px;
+}
+
+.createAcc{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bayon', sans-serif;
+
+}
+
