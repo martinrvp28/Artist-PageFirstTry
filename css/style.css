@@ -12,17 +12,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    background-position: center;
     display: grid;
-    grid-template-rows: 145px auto 145px;
-}
+    height: 100vh;
+    grid-template-rows: auto 70vh 15vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+} 
 
 .headerHome{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 25% 40% 35% ;
-    grid-template-areas: 'logo . navBar';
-
-}
+    grid-template-areas: 'logo . navBar'; */
+    grid-area: header;
+    margin: 0;
+} 
 
 .navBar1{
     padding: 50px;
@@ -33,14 +39,15 @@
     color: white;
     grid-area: navBar;
     justify-content: end;
-   
 
-}
+} 
 
 .name-home{
     padding: 50px;
     grid-area: logo;
 }
+
+
 
 .navBar1 ul{
     display: flex;
@@ -62,11 +69,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    
-}
+    gap: 10% 25%;
+} 
 
 .container-iconos-foot{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +99,7 @@
     list-style: none;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 120%;
+    font-size: 100%;
 
 }
 
@@ -122,14 +129,28 @@ h4{
     background-size: cover;
     background-attachment: fixed;
     display: grid;
-    grid-template-rows: 145px auto 145px;
+    grid-template-rows: auto auto 15vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+
+}
+
+.headerBlack{
+    grid-area: header;
+    margin: 0;
+}
+
+.mainTickets{
+    grid-area: main;
 }
 
 .containerMainTickets{
     background: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50));
-    height: 920px;
-    margin: 0px 100px 100px 100px;
-
+    min-height: 920px;
+    margin: 30px 100px 100px 100px;
+    
 }
 
 table{
@@ -166,7 +187,6 @@ td{
     background-color: white;
     padding: 6px 16px;
     border: 0;
-    animation: text-pop-up-top 0.5s ease-in-out both;
 }
 
 .td-button-soldout{       
@@ -198,15 +218,15 @@ td{
 .bodyStore{
     height: 100vh;
     display: grid;
-    grid-template-rows: 145px auto 145px;
+    grid-template-rows: auto auto 15vh;
 }
 
 .headerStore{
 
     background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
-    display: grid;
+    /* display: grid;
     grid-template-columns: 25% 40% 35% ;
-    grid-template-areas: 'logo . navBar'; 
+    grid-template-areas: 'logo . navBar';  */
 }
 
 .containerStore{
@@ -275,9 +295,14 @@ td{
     background-image: url("../img/login.jpg");  
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     display: grid;
-    grid-template-rows: 145px auto 145px;
+    grid-template-rows: auto auto 145px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
 }
 
 .mainLogin{
@@ -358,4 +383,40 @@ h2{
     font-family: 'Bayon', sans-serif;
 
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+    .mainBody{
+        background-image: url("../img/test1-768.jpg");
+        background-size: cover;
+        grid-template-rows: 145px auto 200px;
+    }
+
+    .headerHome{
+        background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
+    }
+
+    .name-home{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .navBar1{
+        justify-content: center;
+    }
+
+    
+    .container-terms ul li{
+        font-size: 100%;  
+    }
+
+    .headerBlack{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    }
+
+    
+    }
 
