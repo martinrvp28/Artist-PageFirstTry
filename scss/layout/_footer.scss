@@ -1,0 +1,42 @@
+.container-iconos-foot{
+
+    @include xy-center(15px,column);
+    margin-top: 15px;
+
+    .footer-iconos{
+        display: flex;
+        gap: 20px;
+    }
+
+    h4{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        font-weight: 300; 
+    
+    }
+}
+
+.container-terms ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    row-gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    
+    li{
+        list-style: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 100%;
+        margin: 0;
+    
+        a{
+            text-decoration: none;
+            color: white;
+        
+        }
+    }
+}

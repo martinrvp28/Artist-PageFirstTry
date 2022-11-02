@@ -1,504 +1,324 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-}
+.containerMain-logo {
+  padding: 50px;
+  grid-area: logo; }
 
-/*INDEX START*/
-
-.mainBody{ 
-    background-image: url("../img/test1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 70% auto;
-}
-
-.headerHome{
-    /* display: grid;
-    grid-template-columns: 25% 40% 35% ;
-    grid-template-areas: 'logo . navBar'; */
-   
-
-}
-
-.navBar1{
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    color: white;
-    grid-area: navBar;
-    justify-content: end;
-   
-
-}
-
-.name-home{
-    padding: 50px;
-    grid-area: logo;
-}
-
-.navBar1 ul{
+.navBarHome {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: white;
+  grid-area: navBar;
+  justify-content: end; }
+  .navBarHome ul {
     display: flex;
     gap: 35px;
     list-style: none;
     font-size: 120%;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .navBarHome ul li a {
+      text-decoration: none;
+      color: white; }
 
-}
+.mainBody {
+  background-image: url("../img/test1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 70% auto; }
 
+.footer-home {
+  background: linear-gradient(rgba(95, 158, 160, 0.5), rgba(95, 158, 160, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column; }
 
-.navBar1 ul li a {
+.ticketsBody {
+  background-image: url("../img/tickets.1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+  grid-template-rows: auto auto auto; }
+
+.containerMainTickets {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+  min-height: 920px;
+  margin: 0px 100px 100px 100px; }
+  .containerMainTickets table {
+    color: white;
+    width: 100%; }
+    .containerMainTickets table td {
+      padding: 30px;
+      text-align: center; }
+      .containerMainTickets table td .td-button, .containerMainTickets table td .td-button-soldout {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        color: blue;
+        background-color: white;
+        padding: 6px 16px;
+        border: 0; }
+      .containerMainTickets table td .td-button-soldout {
+        background-color: #a00404;
+        color: white; }
+    .containerMainTickets table .td-date, .containerMainTickets table .td-info {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800; }
+    .containerMainTickets table .td-info {
+      font-weight: 300; }
+
+.titleTickets {
+  display: flex;
+  justify-content: center;
+  font-size: 85px;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+  margin-bottom: 35px; }
+
+.textTickets {
+  color: white;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+  font-size: 120%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800; }
+
+.footer-tickets {
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column; }
+
+.bodyStore {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto; }
+
+.headerGreen {
+  background: linear-gradient(rgba(95, 158, 160, 0.5), rgba(95, 158, 160, 0.5)); }
+
+.containerStore {
+  margin: 100px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px; }
+
+.containerMerch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif; }
+
+.pMerch {
+  font-weight: bold; }
+
+.footer-green {
+  background: linear-gradient(rgba(95, 158, 160, 0.5), rgba(95, 158, 160, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column; }
+
+.containerMusic {
+  margin: 75px 0px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 25px 0px; }
+  .containerMusic a {
+    display: flex;
+    justify-content: center; }
+  .containerMusic img {
+    width: 85%;
+    height: 85%; }
+  .containerMusic a img:hover {
+    transform: scale(1.08);
+    transition: transform 1000ms; }
+
+.loginBody {
+  background-image: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto; }
+
+.mainLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.containerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  margin: 50px 0px 50px 0px; }
+
+.imputForm {
+  margin: 5px 40px 20px 40px; }
+
+input {
+  width: 300px;
+  height: 45px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; }
+
+.forgotpass {
+  font-size: 13px;
+  margin-left: 200px;
+  margin-top: -15px; }
+  .forgotpass a {
     text-decoration: none;
     color: white;
-}
+    font-family: 'Bayon', sans-serif;
+    font-size: 13px; }
 
-.footer-home{
-    background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
+h2 {
+  color: white;
+  font-family: 'Bayon', sans-serif;
+  font-size: 45px;
+  letter-spacing: 6px;
+  text-align: center; }
+
+.formEnd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  margin-top: 20px; }
+
+.buttonSign {
+  background-color: white;
+  font-size: 15px;
+  font-family: 'Bayon', sans-serif;
+  width: 140px;
+  height: 45px;
+  border-radius: 200px 200px 200px 200px / 150px 150px 150px 150px; }
+
+.createAcc {
+  text-decoration: none;
+  color: white;
+  font-family: 'Bayon', sans-serif; }
+
+.container-iconos-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  margin-top: 15px; }
+  .container-iconos-foot .footer-iconos {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-       
-}
+    gap: 20px; }
+  .container-iconos-foot h4 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 300; }
 
-.container-iconos-foot{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.footer-iconos{
-    display: flex;
-    gap: 20px;
-}
-
-
-
-.container-terms ul{
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    row-gap: 30px;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap; 
-}
-
-.container-terms ul li{
+.container-terms ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; }
+  .container-terms ul li {
     list-style: none;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 100%;
-    margin: 0;
-
-}
-
-.container-terms ul li a{
-    text-decoration: none;
-    color: white;
-
-}
-
-h4{
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 10px;
-    font-weight: 300; 
-
-}
-
-
-
-/*INDEX END*/
-
-/*TICKETS START*/
-
-.ticketsBody{
-    background-image: url("../img/tickets.1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: grid;
-    grid-template-rows: auto auto auto;
-}
-
-
-
-.containerMainTickets{
-    background: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50));
-    min-height: 920px;
-    margin: 0px 100px 100px 100px;
-
-}
-
-table{
-    color: white;
-    width: 100%;
-
-}
-
-td{
-    padding: 30px;
-    text-align: center;  
-}
-
-.td-date{                  
-
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-
-}
-
-.td-info{                
-
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    
-}
-
-.td-info2{
-
-}
-
-.td-button{              
-
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    color: blue;
-    background-color: white;
-    padding: 6px 16px;
-    border: 0;
-}
-
-.td-button-soldout{       
-
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    color: white;
-    background-color: rgb(160, 4, 4);
-    padding: 6px 10px;
-    border: 0;
-
-}
-
-.footer-tickets{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-
-/*TICKETS END*/
-
-/*STORE START*/
-
-.bodyStore{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto auto auto;
-}
-
-.headerStore{
-
-    background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
-    /* display: grid;
-    grid-template-columns: 25% 40% 35% ;
-    grid-template-areas: 'logo . navBar';  */
-}
-
-.containerStore{
-    margin: 100px 50px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap: 50px;
-
-}
-
-.containerMerch{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    gap: 20px;
-
-}
-
-.pMerch{
-    font-weight: bold;
-}
-
-.footer-music{
-    background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    
-
-}
-
-/*STORE END*/
-
-/*MUSIC START*/
-
-.containerMusic{
-    margin: 75px 0px;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(6,1fr);
-    gap: 25px 0px;
-
-    
-
-}
-
-.containerMusic a img:hover{
-    transform: scale(1.08);
-    transition: transform 1000ms;
-}
-
-.containerMusic a{
-    display: flex;
-    justify-content: center;
-}
-
-.containerMusic img{
-
-    width: 85%;
-    height: 85%;
-}
-
-/*MUSIC END*/
-
-/*LOGIN START*/
-
-
-.loginBody{
-    background-image: url("../img/login.jpg");  
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto auto auto;
-}
-
-.mainLogin{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.containerForm{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px 50px 0px;
-
-}
-
-.imputForm{
-    margin: 5px 40px 20px 40px;
-}
-
-input{
-
-width: 300px;
-height: 45px;
-font-family: 'Inter', sans-serif;
-font-size: 15px;
-
-}
-
-.forgotpass{ 
-
-    font-size: 13px;
-    margin-left: 200px;
-    margin-top: -15px;
-}
-
-.forgotpass a{ 
-
-    text-decoration: none;
-    color: white;
-    font-family: 'Bayon', sans-serif;
-    font-size: 13px;
-
-}
-
-h2{
-    color: white;
-    font-family: 'Bayon', sans-serif;
-    font-size: 45px;
-    letter-spacing: 6px;
-    text-align: center;
-}
-
-
-
-.formEnd{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.buttonSign{
-    background-color: white;
-    font-size: 15px;
-    font-family: 'Bayon', sans-serif;
-    width: 140px;
-    height: 45px;
-    border-radius: 200px 200px 200px 200px / 150px 150px 150px 150px;
-}
-
-.createAcc{
-    text-decoration: none;
-    color: white;
-    font-family: 'Bayon', sans-serif;
-
-}
-
-
-/* SOBREESCRIBO BOOTSTRAP PORQUE ME DABA PROBLEMA Y NO SABIA QUE ES O COMO SACARLO , LO DEDUJE DEL INSPECTOR Y QUERIA ELIMINARLO*/
-
-.row{
-    --bs-gutter-x: 0;
-}
-
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 768px) {
-
-    .navBar1{
-        justify-content: center;
-        padding: 25px 50px 25px 50px;
-    }
-
-    .name-home{
-
-        display: flex;
-        justify-content: center;
-        padding: 25px 50px 25px 50px;
-    }
-
-    .headerHome{
-        background: linear-gradient(rgba(95,158,160,0.5), rgba(95,158,160,0.5));
-    }
-
-    .containerStore{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(6,1fr); 
-    }
-
-    .containerMerch{
-        gap: 0px;
-    }
-
-    .headerTickets{
-        background: linear-gradient(rgba(5,7,12,0.50), rgba(5,7,12,0.50));
-        margin-bottom: 30px;
-    }
-
-    td{
-        padding: 10px;
-    }
-
-    .td-button{              
-        font-size: 15px;
-    }
-    
-    .td-button-soldout{       
-        font-size: 15px;
-    }
-
-    .containerMusic{
-        margin: 50px 0px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(15,1fr);
-        gap: 25px 0px;
-    
-    }
-
-    }
-
-
+    margin: 0; }
+    .container-terms ul li a {
+      text-decoration: none;
+      color: white; }
+
+.row {
+  --bs-gutter-x: 0; }
 
 @media (max-width: 576px) {
+  .navBarHome {
+    padding: 0px 0px 20px 0px; }
+    .navBarHome ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-size: 100%; }
+  .containerStore {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr); }
+  .containerMain-logo {
+    padding: 15px; }
+  td {
+    display: grid; }
+  .td-button, .containerMainTickets table td .td-button-soldout {
+    width: 100%; }
+  .containerMainTickets {
+    margin: 0px 50px 100px 50px; }
+  .containerMusic {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(30, 1fr); }
+  .ticketsBody {
+    background-image: url("../img/tickets.1576.jpg"); }
+  .textTickets {
+    font-size: 80%; } }
 
-    .navBar1{
-        padding: 0px 0px 20px 0px;
-    }
-
-    .navBar1 ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        font-size: 100%;
-        
-    }
-
-
-    .containerStore{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(12,1fr); 
-    }
-
-    .name-home{
-        padding: 15px;
-    }
-
-    td{
-        display: grid;
-    }
-
-    .td-button{
-        width: 100%;
-    }
-
-    .containerMainTickets{
-        margin: 0px 50px 100px 50px;
-    
-    }
-
-    .containerMusic{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(30,1fr);
-    
-    }
-
-    .ticketsBody{
-        background-image: url("../img/tickets.1576.jpg");
-        
-    }
-
-}
-
+@media (max-width: 768px) {
+  .navBarHome {
+    justify-content: center;
+    padding: 25px 50px 25px 50px; }
+  .containerMain-logo {
+    display: flex;
+    justify-content: center;
+    padding: 25px 50px 25px 50px; }
+  .headerHome {
+    background: linear-gradient(rgba(95, 158, 160, 0.5), rgba(95, 158, 160, 0.5)); }
+  .containerStore {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  .containerMerch {
+    gap: 0px; }
+  .headerTickets {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5));
+    margin-bottom: 30px; }
+  td {
+    padding: 10px; }
+  .td-button, .containerMainTickets table td .td-button-soldout {
+    font-size: 15px; }
+  .td-button-soldout {
+    font-size: 15px; }
+  .containerMusic {
+    margin: 50px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 25px 0px; } }

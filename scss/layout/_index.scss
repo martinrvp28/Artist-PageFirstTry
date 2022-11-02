@@ -1,0 +1,18 @@
+.mainBody{ 
+    background-image: url("../img/test1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 70% auto;
+}
+
+
+.footer-home{
+    background: $color-header1;
+    @include xy-center(5px,column);
+}
+
+

@@ -1,0 +1,30 @@
+.containerMain-logo{
+    padding: 50px;
+    grid-area: logo;
+}
+
+.navBarHome{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: white;
+    grid-area: navBar;
+    justify-content: end;
+
+    ul{
+        display: flex;
+        gap: 35px;
+        list-style: none;
+        font-size: 120%;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

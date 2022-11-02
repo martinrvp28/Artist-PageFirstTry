@@ -1,0 +1,38 @@
+.bodyStore{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+
+
+.headerGreen{
+    background: $color-header1;
+}
+
+.containerStore{
+    margin: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 50px;
+}
+
+
+.containerMerch{
+    @include xy-center(20px,column);
+    font-family: 'Inter', sans-serif;
+
+}
+
+.pMerch{
+    font-weight: bold;
+}
+
+.footer-green{
+        background: $color-header1;
+        @include xy-center(20px,column);
+}
+
+
+

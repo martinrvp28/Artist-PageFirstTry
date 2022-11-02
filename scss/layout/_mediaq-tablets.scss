@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+
+    .navBarHome{
+        justify-content: center;
+        padding: 25px 50px 25px 50px;
+    }
+
+    .containerMain-logo{
+
+        display: flex;
+        justify-content: center;
+        padding: 25px 50px 25px 50px;
+    }
+
+    .headerHome{
+        background: $color-header1;
+    }
+
+    .containerStore{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr); 
+    }
+
+    .containerMerch{
+        gap: 0px;
+    }
+
+    .headerTickets{
+        background: $color-header2;
+        margin-bottom: 30px;
+    }
+
+    td{
+        padding: 10px;
+    }
+
+    .td-button{              
+        font-size: 15px;
+    }
+    
+    .td-button-soldout{       
+        font-size: 15px;
+    }
+
+    .containerMusic{
+        margin: 50px 0px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(15,1fr);
+        gap: 25px 0px;
+    
+    }
+
+    }

@@ -1,0 +1,55 @@
+@media (max-width: 576px) {
+
+    .navBarHome{
+        padding: 0px 0px 20px 0px;
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 100%;
+            
+        }
+    }
+
+    
+    .containerStore{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(12,1fr); 
+    }
+
+
+    .containerMain-logo{
+        padding: 15px;
+    }
+
+    td{
+        display: grid;
+    }
+
+    .td-button{
+        width: 100%;
+    }
+
+    .containerMainTickets{
+        margin: 0px 50px 100px 50px;
+    
+    }
+
+    .containerMusic{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(30,1fr);
+    
+    }
+
+    .ticketsBody{
+        background-image: url("../img/tickets.1576.jpg");
+        
+    }
+
+    .textTickets{
+        font-size: 80%;
+    }
+
+}

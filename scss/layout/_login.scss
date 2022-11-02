@@ -1,0 +1,84 @@
+.loginBody{
+    background-image: url("../img/login.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.mainLogin{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm{
+
+    @include xy-center(0,column);
+    margin: 50px 0px 50px 0px;
+
+}
+
+.imputForm{
+    margin: 5px 40px 20px 40px;
+}
+
+input{
+
+width: 300px;
+height: 45px;
+font-family: 'Inter', sans-serif;
+font-size: 15px;
+
+}
+
+.forgotpass{ 
+
+    font-size: 13px;
+    margin-left: 200px;
+    margin-top: -15px;
+
+    a{ 
+
+        text-decoration: none;
+        color: white;
+        font-family: 'Bayon', sans-serif;
+        font-size: 13px;
+    
+    }
+}
+
+h2{
+    color: white;
+    font-family: 'Bayon', sans-serif;
+    font-size: 45px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+
+
+.formEnd{
+    @include xy-center(0,column);
+    margin-top: 20px;
+}
+
+.buttonSign{
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Bayon', sans-serif;
+    width: 140px;
+    height: 45px;
+    border-radius: 200px 200px 200px 200px / 150px 150px 150px 150px;
+}
+
+.createAcc{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bayon', sans-serif;
+
+}

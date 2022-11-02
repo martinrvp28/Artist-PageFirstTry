@@ -1,0 +1,23 @@
+.containerMusic{
+    margin: 75px 0px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 25px 0px;
+
+    a{
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        width: 85%;
+        height: 85%;
+    }
+
+    a img:hover{
+        transform: scale(1.08);
+        transition: transform 1000ms;
+    }
+}
+
