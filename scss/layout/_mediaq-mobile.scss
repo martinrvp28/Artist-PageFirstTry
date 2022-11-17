@@ -2,6 +2,7 @@
 
     .navBarHome{
         padding: 0px 0px 20px 0px;
+        
 
         ul {
             flex-direction: column;
@@ -50,6 +51,18 @@
 
     .textTickets{
         font-size: 80%;
+    }
+
+    .mainIndex{
+        
+        h1{
+            display: none;
+        }
+    }
+
+    .containerForm{
+        max-width: 576px;
+    
     }
 
 }

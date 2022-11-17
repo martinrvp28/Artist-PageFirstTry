@@ -80,3 +80,29 @@
     background: $color-header2;
     @include xy-center(25px,column);
 }
+.containFollow{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    
+
+}
+
+.buttonFoll{ 
+    height: 45px;
+    width: 120px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    background: $color-header2;
+    font-size: 15px;
+    color: white;
+    border: 0;
+}
+
+.buttonFoll:hover{
+
+    background-color: black;
+    color: white;
+}

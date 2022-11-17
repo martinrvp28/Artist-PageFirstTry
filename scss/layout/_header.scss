@@ -13,18 +13,8 @@
     grid-area: navBar;
     justify-content: end;
 
-    ul{
-        display: flex;
-        gap: 35px;
-        list-style: none;
-        font-size: 120%;
-        margin: 0;
-        padding: 0;
-        flex-wrap: wrap;
+    @include animation-navBar();
 
-        li a {
-            text-decoration: none;
-            color: white;
-        }
     }
-}
+
+    

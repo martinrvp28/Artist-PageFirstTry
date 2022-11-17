@@ -13,6 +13,16 @@
     img{
         width: 85%;
         height: 85%;
+        -webkit-filter: grayscale(100%);
+	    filter: grayscale(85%);
+	    -webkit-transition: .1s ease-in-out;
+	    transition: 3.5s ease-in-out;
+    }
+
+    img:hover{
+
+        -webkit-filter: grayscale(0);
+	    filter: grayscale(0);
     }
 
     a img:hover{
